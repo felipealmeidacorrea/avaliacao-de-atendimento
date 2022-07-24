@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+.submission-status.success {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: $extra-color-1;
+    font-size: $text-font-size-3;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 26px;
+}
+
+.return-action {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: $text-font-size-3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.export-button {
+    width: 87px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: $text-font-size-4;
+    color: $secondary-color;
+    font-weight: bold;
+    background-color: $primary-color;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    &:hover {
+        cursor: pointer;
+    }
+}

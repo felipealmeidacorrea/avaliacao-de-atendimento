@@ -1,0 +1,37 @@
+@import '../abstract/variaveis';
+.ranking-table {
+    width: 360px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    tr {
+        &:nth-child(even) {
+            background-color: $bg-color-1;
+        }
+        &:hover {
+            background-color: $tertiary-color;
+        }
+    }
+    th,
+    td {
+        border: 1px solid $tertiary-color;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        color: $extra-color-3;
+        font-size: $text-font-size-3;
+        font-weight: bold;
+    }
+    th {
+        background-color: $extra-color-2;
+        color: $secondary-color;
+        border-top: none;
+        &:first-child {
+            border: none;
+            border-top-left-radius: 5px;
+        }
+        &:last-child {
+            border-top-right-radius: 5px;
+            border: none;
+        }
+    }
+}

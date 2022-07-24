@@ -1,0 +1,40 @@
+@import '../abstract/variaveis';
+
+/*---beginning of main-form---*/
+
+.main-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    .main-form__field {
+        width: 360px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: $text-font-size-3;
+        background-color: $bg-color-1;
+        &::placeholder {
+            color: $tertiary-color;
+        }
+    }
+    .main-form__button {
+        width: 180px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-weight: bold;
+        font-size: $text-font-size-3;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*---end of main-form---*/

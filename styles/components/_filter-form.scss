@@ -1,0 +1,33 @@
+@import '../abstract/variaveis';
+.filter-form {
+    width: 360px;
+    height: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: $text-font-size-4;
+    input {
+        border: none;
+        border-radius: 5px;
+        background-color: $bg-color-1;
+        color: $extra-color-3;
+        &:first-child {
+            width: 80px;
+        }
+        &:nth-child(2) {
+            width: 80px;
+        }
+        &:nth-child(3) {
+            width: 70px;
+        }
+        &:nth-child(5) {
+            width: 70px;
+            background-color: $primary-color;
+            color: $secondary-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
