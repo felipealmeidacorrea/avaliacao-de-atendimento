@@ -91,7 +91,7 @@ video {
   vertical-align: baseline;
 }
 
-/*--Aplica a fonte em todo o documento--*/
+/*--Aplica a fonte em todo o documento, define a cor de fundo e o tamanho mínimo para responsividade--*/
 html,
 body {
   font-family: "montserrat", sans-serif;
@@ -99,7 +99,7 @@ body {
   min-width: 500px;
 }
 
-/*---Começo do header---*/
+/*---Beginning of header---*/
 header {
   width: 100%;
   text-align: center;
@@ -125,8 +125,8 @@ header .page-title {
   font-weight: bold;
 }
 
-/*---Fim do header---*/
-/*---Começo do main-container---*/
+/*---End of header---*/
+/*---Beginning of main-container---*/
 .main-container {
   box-sizing: border-box;
   width: 100%;
@@ -147,8 +147,8 @@ header .page-title {
   margin-bottom: 35px;
 }
 
-/*---Fim do main-container---*/
-/*---beginning of main-form---*/
+/*---End of main-container---*/
+/*---Beginning of main-form---*/
 .main-form {
   display: flex;
   flex-flow: column;
@@ -189,7 +189,8 @@ header .page-title {
   cursor: pointer;
 }
 
-/*---end of main-form---*/
+/*---End of main-form---*/
+/*--Beginning of generics--*/
 .submission-status.success {
   width: 360px;
   height: 40px;
@@ -236,6 +237,8 @@ header .page-title {
   cursor: pointer;
 }
 
+/*--End of generics--*/
+/*--Começo do filter-form--*/
 .filter-form {
   width: 360px;
   height: 25px;
@@ -269,6 +272,8 @@ header .page-title {
   cursor: pointer;
 }
 
+/*--Fim do filter-form--*/
+/*--Beginning of ranking-table--*/
 .ranking-table {
   width: 360px;
   margin: 0 auto;
@@ -302,4 +307,6 @@ header .page-title {
 .ranking-table th:last-child {
   border-top-right-radius: 5px;
   border: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*--End of ranking-table--*//*# sourceMappingURL=style.css.map */
