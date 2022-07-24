@@ -238,7 +238,7 @@ header .page-title {
 }
 
 /*--End of generics--*/
-/*--Começo do filter-form--*/
+/*--Beginning of filter-form--*/
 .filter-form {
   width: 360px;
   height: 25px;
@@ -272,7 +272,7 @@ header .page-title {
   cursor: pointer;
 }
 
-/*--Fim do filter-form--*/
+/*--End of filter-form--*/
 /*--Beginning of ranking-table--*/
 .ranking-table {
   width: 360px;
