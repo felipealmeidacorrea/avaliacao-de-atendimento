@@ -17,54 +17,50 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="topbar">
-            Avaliação de atendimento
-        </h1>
-        <h2 class="page-title">RANKING</h2>
+    <header class="header">
+        <h1 class="header__topbar">Avaliação de atendimento</h1>
+        <h2 class="header__page-title">RANKING</h2>
     </header>
     <main>
         <section class="main-container">
-            <h3 class="container-info">Ranking</h3>
+            <h3 class="main-container__info">Ranking</h3>
             <form class="filter-form">
-                <input type="date">
-                <input type="date">
-                <input list="filiais" placeholder="filial">
-                <datalist id="filiais">
-                    <option value="3">
-                    <option value="5">
-                </datalist>
-                <input type="button" value="Filtrar">
+                <div class="filter-form__content-set">
+                    <label class="filter-form__content-set__label" for="dataInicio">De:</label>
+                    <input class="filter-form__content-set__data" id="dataInicio" name="dataInicio" type="date">
+                </div>
+                <div class="filter-form__content-set">
+                    <label class="filter-form__content-set__label" for="dataFim">Até:</label>
+                    <input class="filter-form__content-set__data" id="dataFim" name="dataFim" type="date">
+                </div>
+                <div class="filter-form__content-set">
+                    <label class="filter-form__content-set__label" for="codFilial">Filial:</label>
+                    <select class="filter-form__content-set__data" id="codFilial" name="codfilial">
+					<option value="">Selecione</option>
+					<option value="3">3</option>
+					<option value="5">5</option>
+                </select>
+                </div>
+                <input class="filter-form__button" type="submit" value="Filtrar">
             </form>
-            <button class="export-button">Exportar</button>
+            <button class="export-button" id="exportButton">Exportar</button>
             <table class="ranking-table">
-                <tr>
-                    <th>Pos.</th>
-                    <th>Nome do vendedor</th>
-                    <th>Filial</th>
-                    <th>Nota</th>
+                <tr class="ranking-table__row">
+                    <th class="ranking-table__row__header-cell">Pos.</th>
+                    <th class="ranking-table__row__header-cell">Nome do vendedor</th>
+                    <th class="ranking-table__row__header-cell">Filial</th>
+                    <th class="ranking-table__row__header-cell">Nota</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Fulano de tal</td>
-                    <td>3</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Beltrano de tal</td>
-                    <td>2</td>
-                    <td>4,5</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Cliclano</td>
-                    <td>3</td>
-                    <td>3</td>
+                <tr class="ranking-table__row">
+                    <td class="ranking-table__row__data-cell">1</td>
+                    <td class="ranking-table__row__data-cell">Fulano de tal</td>
+                    <td class="ranking-table__row__data-cell">3</td>
+                    <td class="ranking-table__row__data-cell">5</td>
                 </tr>
             </table>
         </section>
     </main>
+    <script src="./js/table-to-csv.js"></script>
 </body>
 
 </html>

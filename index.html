@@ -17,18 +17,20 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="topbar">
+    <header class="header">
+        <h1 class="header__topbar">
             Avaliação de atendimento
         </h1>
-        <h2 class="page-title">INÍCIO</h2>
+        <h2 class="header__page-title">INÍCIO</h2>
     </header>
     <main>
         <section class="main-container">
-            <h3 class="container-info">Insira os dados abaixo</h3>
-            <form class="main-form">
-                <input class="main-form__field" type="number" placeholder="CÓDIGO DO VENDEDOR">
-                <input class="main-form__field" type="number" placeholder="CÓDIGO DA NF/CUPOM">
+            <h3 class="main-container__info">Insira os dados abaixo</h3>
+            <form method="POST" class="main-form">
+                <label class="main-form__label" for="codVendedor">Código do vendedor</label>
+                <input class="main-form__field" id="codVendedor" type="number" placeholder="CÓDIGO DO VENDEDOR">
+                <label class="main-form__label" for="codNf">Código da NF</label>
+                <input class="main-form__field" id="codNf" type="number" placeholder="CÓDIGO DA NF/CUPOM">
                 <input class="main-form__button" type="submit" Value="Avançar">
             </form>
         </section>

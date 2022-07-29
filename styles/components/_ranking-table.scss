@@ -1,4 +1,4 @@
-@import '../abstract/variaveis';
+@import '../abstract/variables';
 
 /*--Beginning of ranking-table--*/
 
@@ -6,7 +6,7 @@
     width: 360px;
     margin: 0 auto;
     border-collapse: collapse;
-    tr {
+    .ranking-table__row {
         &:nth-child(even) {
             background-color: $bg-color-1;
         }
@@ -14,8 +14,8 @@
             background-color: $tertiary-color;
         }
     }
-    th,
-    td {
+    .ranking-table__row__header-cell,
+    .ranking-table__row__data-cell {
         border: 1px solid $tertiary-color;
         border-left: none;
         border-right: none;
@@ -24,7 +24,7 @@
         font-size: $text-font-size-3;
         font-weight: bold;
     }
-    th {
+    .ranking-table__row__header-cell {
         background-color: $extra-color-2;
         color: $secondary-color;
         border-top: none;
@@ -36,6 +36,9 @@
             border-top-right-radius: 5px;
             border: none;
         }
+    }
+    .ranking-table__row__data-cell {
+        text-transform: lowercase;
     }
 }
 

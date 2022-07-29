@@ -1,36 +1,48 @@
-@import '../abstract/variaveis';
+@import "../abstract/variables";
 
 /*--Beginning of filter-form--*/
 
 .filter-form {
     width: 360px;
-    height: 25px;
+    height: 30px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 25px;
     font-size: $text-font-size-4;
-    input {
-        border: none;
-        border-radius: 5px;
-        background-color: $bg-color-1;
-        color: $extra-color-3;
+    .filter-form__content-set {
         &:first-child {
-            width: 80px;
+            width: 110px;
         }
         &:nth-child(2) {
-            width: 80px;
+            width: 110px;
         }
         &:nth-child(3) {
-            width: 70px;
+            width: 40px;
         }
-        &:nth-child(5) {
-            width: 70px;
-            background-color: $primary-color;
-            color: $secondary-color;
-            &:hover {
-                cursor: pointer;
-            }
+        .filter-form__content-set__label {
+            font-size: $text-font-size-4;
+            color: $extra-color-3;
+        }
+        .filter-form__content-set__data {
+            border: none;
+            border-radius: 5px;
+            background-color: $bg-color-1;
+            color: $extra-color-3;
+            width: inherit;
+            font-size: $text-font-size-4;
+        }
+    }
+    .filter-form__button {
+        width: 70px;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        &:hover {
+            cursor: pointer;
         }
     }
 }

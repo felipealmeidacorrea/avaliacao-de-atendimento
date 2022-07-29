@@ -1,0 +1,86 @@
+@import '../abstract/variables';
+
+/*--Beginning of values-box--*/
+
+.values-box {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 26px;
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    .values-box__set {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        .values-box__set__button {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+            border-radius: 5px;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .values-box__set__button.--one {
+            background-color: $values-box-color-1;
+        }
+        .values-box__set__button.--two {
+            background-color: $values-box-color-2;
+        }
+        .values-box__set__button.--three {
+            background-color: $values-box-color-3;
+        }
+        .values-box__set__button.--four {
+            background-color: $values-box-color-4;
+        }
+        .values-box__set__button.--five {
+            background-color: $values-box-color-5;
+        }
+        .values-box__set__svg.--one {
+            .values-box__set__svg__for-fill {
+                fill: $values-box-color-1;
+            }
+            .values-box__set__svg__for-stroke {
+                stroke: $values-box-color-1;
+            }
+        }
+        .values-box__set__svg.--two {
+            .values-box__set__svg__for-fill {
+                fill: $values-box-color-2;
+            }
+            .values-box__set__svg__for-stroke {
+                stroke: $values-box-color-2;
+            }
+        }
+        .values-box__set__svg.--three {
+            .values-box__set__svg__for-fill {
+                fill: $values-box-color-3;
+            }
+            .values-box__set__svg__for-stroke {
+                stroke: $values-box-color-3;
+            }
+        }
+        .values-box__set__svg.--four {
+            .values-box__set__svg__for-fill {
+                fill: $values-box-color-4;
+            }
+            .values-box__set__svg__for-stroke {
+                stroke: $values-box-color-4;
+            }
+        }
+        .values-box__set__svg.--five {
+            .values-box__set__svg__for-fill {
+                fill: $values-box-color-5;
+            }
+            .values-box__set__svg__for-stroke {
+                stroke: $values-box-color-5;
+            }
+        }
+    }
+}
+
+
+/*--End of values-box--*/

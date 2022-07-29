@@ -1,4 +1,4 @@
-@import '../abstract/variaveis';
+@import '../abstract/variables';
 
 /*---Beginning of main-form---*/
 
@@ -7,10 +7,14 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    .main-form__label {
+        font-size: $text-font-size-4;
+        color: $extra-color-3;
+    }
     .main-form__field {
         width: 360px;
         height: 40px;
+        margin-bottom: 26px;
         border: none;
         border-radius: 5px;
         text-align: center;

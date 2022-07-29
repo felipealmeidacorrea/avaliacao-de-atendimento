@@ -17,17 +17,66 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="topbar">
+    <header class="header">
+        <h1 class="header__topbar">
             Avaliação de atendimento
         </h1>
-        <h2 class="page-title">AVALIAÇÃO</h2>
+        <h2 class="header__page-title">AVALIAÇÃO</h2>
     </header>
     <main>
         <section class="main-container">
-            <h3 class="container-info">Peça para o cliente dar a nota</h3>
-            <form class="main-form">
-                <input id="main-form__field#valuation" class="main-form__field" type="password" pattern="[1-5]" placeholder="DIGITAR A NOTA AQUI">
+            <h3 class="main-container__info">Peça para o cliente dar a nota</h3>
+            <div class="values-box">
+                <div class="values-box__set">
+                    <svg class="values-box__set__svg --one" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="values-box__set__svg__for-stroke" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#E41021"/>
+                        <circle class="values-box__set__svg__for-fill" cx="6.09998" cy="6.5" r="1.5" fill="#E41021"/>
+                        <circle class="values-box__set__svg__for-fill" cx="14.1" cy="6.5" r="1.5" fill="#E41021"/>
+                        <path class="values-box__set__svg__for-fill" d="M13.6909 15.5555C13.9537 15.5555 14.1721 15.3394 14.1084 15.0844C13.9682 14.5226 13.5794 13.9999 12.9871 13.5914C12.2317 13.0704 11.2072 12.7778 10.139 12.7778C9.07075 12.7778 8.04627 13.0704 7.29092 13.5914C6.69854 13.9999 6.30974 14.5226 6.16954 15.0844C6.10591 15.3394 6.32426 15.5555 6.58709 15.5555C6.84991 15.5555 7.0568 15.3375 7.13868 15.0877C7.26584 14.6999 7.54972 14.3411 7.96391 14.0555C8.54078 13.6577 9.32317 13.4342 10.139 13.4342C10.9548 13.4342 11.7372 13.6577 12.3141 14.0555C12.7283 14.3411 13.0121 14.6999 13.1393 15.0877C13.2212 15.3375 13.4281 15.5555 13.6909 15.5555Z" fill="#E41021"/>
+                        </svg>
+                    <button class="values-box__set__button --one" id="value1">1</button>
+                </div>
+                <div class="values-box__set">
+                    <svg class="values-box__set__svg --two" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="values-box__set__svg__for-stroke" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#FFC75F"/>
+                        <circle class="values-box__set__svg__for-fill" cx="6.09998" cy="6.5" r="1.5" fill="#FFC75F"/>
+                        <circle class="values-box__set__svg__for-fill" cx="14.1" cy="6.5" r="1.5" fill="#FFC75F"/>
+                        <line class="values-box__set__svg__for-stroke" x1="6.36728" y1="15.1958" x2="13.5958" y2="13.4327" stroke="#FFC75F" stroke-linecap="round"/>
+                        </svg>
+                    <button class="values-box__set__button --two" id="value2">2</button>
+                </div>
+                <div class="values-box__set">
+                    <svg class="values-box__set__svg --three" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="values-box__set__svg__for-stroke" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#F0F000"/>
+                        <circle class="values-box__set__svg__for-fill" cx="6.09998" cy="6.5" r="1.5" fill="#F0F000"/>
+                        <circle class="values-box__set__svg__for-fill" cx="14.1" cy="6.5" r="1.5" fill="#F0F000"/>
+                        <line class="values-box__set__svg__for-stroke" x1="6.69995" y1="14.3" x2="13.7" y2="14.3" stroke="#F0F000" stroke-linecap="round"/>
+                        </svg>
+                    <button class="values-box__set__button --three" id="value3">3</button>
+                </div>
+                <div class="values-box__set">
+                    <svg class="values-box__set__svg --four" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="values-box__set__svg__for-stroke" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#90EE90"/>
+                        <circle class="values-box__set__svg__for-fill" cx="6.09998" cy="6.5" r="1.5" fill="#90EE90"/>
+                        <circle class="values-box__set__svg__for-fill" cx="14.1" cy="6.5" r="1.5" fill="#90EE90"/>
+                        <path class="values-box__set__svg__for-fill" d="M6.48436 13.5C6.21683 13.5 5.99428 13.7205 6.06486 13.9786C6.21208 14.5169 6.60544 15.0171 7.20081 15.4092C7.96971 15.9155 9.01256 16.2 10.1 16.2C11.1873 16.2 12.2302 15.9155 12.9991 15.4092C13.5945 15.0171 13.9878 14.5169 14.135 13.9786C14.2056 13.7205 13.9831 13.5 13.7155 13.5C13.448 13.5 13.2375 13.7228 13.1471 13.9746C13.0144 14.344 12.7282 14.6853 12.314 14.958C11.7268 15.3447 10.9304 15.562 10.1 15.562C9.26951 15.562 8.47309 15.3447 7.88588 14.958C7.47168 14.6853 7.18551 14.344 7.05283 13.9746C6.9624 13.7228 6.7519 13.5 6.48436 13.5Z" fill="#90EE90"/>
+                        </svg>
+                    <button class="values-box__set__button --four" id="value4">4</button>
+                </div>
+                <div class="values-box__set">
+                    <svg class="values-box__set__svg --five" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="values-box__set__svg__for-stroke" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#00FF00"/>
+                        <circle class="values-box__set__svg__for-fill" cx="6.09998" cy="6.5" r="1.5" fill="#00FF00"/>
+                        <circle class="values-box__set__svg__for-fill" cx="14.1" cy="6.5" r="1.5" fill="#00FF00"/>
+                        <path class="values-box__set__svg__for-fill" d="M14.2 12.3C14.2 12.6546 14.094 14.3057 13.8879 14.6332C13.6819 14.9608 13.3799 15.2585 12.9991 15.5092C12.6184 15.7599 12.1664 15.9588 11.669 16.0945C11.1716 16.2302 10.6384 16.3 10.1 16.3C9.56158 16.3 9.02843 16.2302 8.531 16.0945C8.03356 15.9588 7.58158 15.7599 7.20086 15.5092C6.82014 15.2585 6.51814 14.9608 6.31209 14.6332C6.10605 14.3057 6 12.6546 6 12.3L10.1 12.3H14.2Z" fill="#00FF00"/>
+                        </svg>
+
+                    <button class="values-box__set__button --five" id="value5">5</button>
+                </div>
+            </div>
+            <form method="POST" class="main-form">
+                <label class="main-form__label" for="main-form__field#valuation">Ou digitar a nota abaixo:</label>
+                <input class="main-form__field" id="main-form__field#valuation" type="password" pattern="[1-5]" placeholder="DIGITAR A NOTA AQUI">
                 <input class="main-form__button" type="submit" value="Finalizar">
             </form>
         </section>

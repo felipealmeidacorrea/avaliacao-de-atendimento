@@ -104,7 +104,7 @@ header {
   width: 100%;
   text-align: center;
 }
-header .topbar {
+header .header__topbar {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -115,7 +115,7 @@ header .topbar {
   font-weight: bold;
   font-size: 20px;
 }
-header .page-title {
+header .header__page-title {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -140,7 +140,7 @@ header .page-title {
   padding: 20px 10px;
   text-align: center;
 }
-.main-container .container-info {
+.main-container .main-container__info {
   font-size: 18px;
   font-weight: bold;
   color: #E41021;
@@ -148,17 +148,93 @@ header .page-title {
 }
 
 /*---End of main-container---*/
+/*--Beginning of values-box--*/
+.values-box {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 26px;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+}
+.values-box .values-box__set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.values-box .values-box__set .values-box__set__button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.values-box .values-box__set .values-box__set__button:hover {
+  cursor: pointer;
+}
+.values-box .values-box__set .values-box__set__button.--one {
+  background-color: #E41021;
+}
+.values-box .values-box__set .values-box__set__button.--two {
+  background-color: #FFC75F;
+}
+.values-box .values-box__set .values-box__set__button.--three {
+  background-color: #F0F000;
+}
+.values-box .values-box__set .values-box__set__button.--four {
+  background-color: #90EE90;
+}
+.values-box .values-box__set .values-box__set__button.--five {
+  background-color: #00FF00;
+}
+.values-box .values-box__set .values-box__set__svg.--one .values-box__set__svg__for-fill {
+  fill: #E41021;
+}
+.values-box .values-box__set .values-box__set__svg.--one .values-box__set__svg__for-stroke {
+  stroke: #E41021;
+}
+.values-box .values-box__set .values-box__set__svg.--two .values-box__set__svg__for-fill {
+  fill: #FFC75F;
+}
+.values-box .values-box__set .values-box__set__svg.--two .values-box__set__svg__for-stroke {
+  stroke: #FFC75F;
+}
+.values-box .values-box__set .values-box__set__svg.--three .values-box__set__svg__for-fill {
+  fill: #F0F000;
+}
+.values-box .values-box__set .values-box__set__svg.--three .values-box__set__svg__for-stroke {
+  stroke: #F0F000;
+}
+.values-box .values-box__set .values-box__set__svg.--four .values-box__set__svg__for-fill {
+  fill: #90EE90;
+}
+.values-box .values-box__set .values-box__set__svg.--four .values-box__set__svg__for-stroke {
+  stroke: #90EE90;
+}
+.values-box .values-box__set .values-box__set__svg.--five .values-box__set__svg__for-fill {
+  fill: #00FF00;
+}
+.values-box .values-box__set .values-box__set__svg.--five .values-box__set__svg__for-stroke {
+  stroke: #00FF00;
+}
+
+/*--End of values-box--*/
 /*---Beginning of main-form---*/
 .main-form {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 26px;
+}
+.main-form .main-form__label {
+  font-size: 14px;
+  color: #222222;
 }
 .main-form .main-form__field {
   width: 360px;
   height: 40px;
+  margin-bottom: 26px;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -241,34 +317,44 @@ header .page-title {
 /*--Beginning of filter-form--*/
 .filter-form {
   width: 360px;
-  height: 25px;
+  height: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 25px;
   font-size: 14px;
 }
-.filter-form input {
+.filter-form .filter-form__content-set:first-child {
+  width: 110px;
+}
+.filter-form .filter-form__content-set:nth-child(2) {
+  width: 110px;
+}
+.filter-form .filter-form__content-set:nth-child(3) {
+  width: 40px;
+}
+.filter-form .filter-form__content-set .filter-form__content-set__label {
+  font-size: 14px;
+  color: #222222;
+}
+.filter-form .filter-form__content-set .filter-form__content-set__data {
   border: none;
   border-radius: 5px;
   background-color: #F7F7F7;
   color: #222222;
+  width: inherit;
+  font-size: 14px;
 }
-.filter-form input:first-child {
-  width: 80px;
-}
-.filter-form input:nth-child(2) {
-  width: 80px;
-}
-.filter-form input:nth-child(3) {
+.filter-form .filter-form__button {
   width: 70px;
-}
-.filter-form input:nth-child(5) {
-  width: 70px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
   background-color: #E41021;
   color: #FFFFFF;
 }
-.filter-form input:nth-child(5):hover {
+.filter-form .filter-form__button:hover {
   cursor: pointer;
 }
 
@@ -279,14 +365,14 @@ header .page-title {
   margin: 0 auto;
   border-collapse: collapse;
 }
-.ranking-table tr:nth-child(even) {
+.ranking-table .ranking-table__row:nth-child(even) {
   background-color: #F7F7F7;
 }
-.ranking-table tr:hover {
+.ranking-table .ranking-table__row:hover {
   background-color: #CCCCCC;
 }
-.ranking-table th,
-.ranking-table td {
+.ranking-table .ranking-table__row__header-cell,
+.ranking-table .ranking-table__row__data-cell {
   border: 1px solid #CCCCCC;
   border-left: none;
   border-right: none;
@@ -295,18 +381,21 @@ header .page-title {
   font-size: 16px;
   font-weight: bold;
 }
-.ranking-table th {
+.ranking-table .ranking-table__row__header-cell {
   background-color: #ED6F7D;
   color: #FFFFFF;
   border-top: none;
 }
-.ranking-table th:first-child {
+.ranking-table .ranking-table__row__header-cell:first-child {
   border: none;
   border-top-left-radius: 5px;
 }
-.ranking-table th:last-child {
+.ranking-table .ranking-table__row__header-cell:last-child {
   border-top-right-radius: 5px;
   border: none;
+}
+.ranking-table .ranking-table__row__data-cell {
+  text-transform: lowercase;
 }
 
 /*--End of ranking-table--*//*# sourceMappingURL=style.css.map */
