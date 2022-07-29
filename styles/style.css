@@ -100,11 +100,11 @@ body {
 }
 
 /*---Beginning of header---*/
-header {
+.header {
   width: 100%;
   text-align: center;
 }
-header .header__topbar {
+.header .header__topbar {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -115,7 +115,7 @@ header .header__topbar {
   font-weight: bold;
   font-size: 20px;
 }
-header .header__page-title {
+.header .header__page-title {
   display: flex;
   flex-flow: column;
   justify-content: center;
